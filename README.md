@@ -6,13 +6,16 @@ This is needed to deploy an app made with Swift into the AppStore
 
 #Usage
 
-###Run the script:
-	sh package_ipa.sh /path/to/signed/app /output/ipa/path
+###For Swift 3 run the script:
+	sh package_ipa_default.sh /path/to/signed/app /output/ipa/path
+
+
+###For Swift 2.3 run the script:
+	sh package_ipa_xcode8_swift23.sh /path/to/signed/app /output/ipa/path
 
 
 ###Requirements
-- OSX Mavericks or Yosemite
-- Xcode 6
+- Xcode 8
 - Xcode command line tools
 
 ###License
