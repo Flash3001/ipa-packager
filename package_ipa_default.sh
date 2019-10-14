@@ -38,7 +38,7 @@ then
     for SWIFT_LIB in $(ls -1 "${APP}/Frameworks/" | grep libswift); do
         echo "Copying ${SWIFT_LIB}"
         
-        SOURCE="${DEVELOPER_DIR}/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/${SWIFT_LIB}"
+        SOURCE="${DEVELOPER_DIR}/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/iphoneos/${SWIFT_LIB}"
         SWIFT_LIB_FULL_PATH="${APP}/Frameworks/${SWIFT_LIB}"
 
         ARC_TO_REMOVE=($(lipo "${SOURCE}" -archs))
